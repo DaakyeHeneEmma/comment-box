@@ -1,0 +1,23 @@
+{
+  "name": "comment-box-with-socket-io",
+  "version": "1.0.0",
+  "description": "with socket framework",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaakyeHeneEmma/comment-box-with-socket-io.git"
+  },
+  "author": "daakye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaakyeHeneEmma/comment-box-with-socket-io/issues"
+  },
+  "homepage": "https://github.com/DaakyeHeneEmma/comment-box-with-socket-io#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^3.0.4"
+  }
+}
