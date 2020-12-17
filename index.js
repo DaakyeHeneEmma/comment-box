@@ -6,12 +6,13 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
 
+io.emit('some event', { someProperty: 'some value', otherProperty: 'other value' });
 io.on('connection', (socket) => {
-    socket.on('chat message', (msg) => {
-      console.log('message: ' + msg);
-    });
+  socket.on('chat message', (msg) => {
+    io.emit('chat message', msg);
   });
+});
 
-http.listen(6000, () => {
-  console.log('listening on *:6000');
+http.listen(3000, () => {
+  console.log('listening on *:3000');
 });
